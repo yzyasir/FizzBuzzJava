@@ -8,19 +8,20 @@
 
 public class FizzBuzz {
     public String fizzBuzzMethod(int number) {
+        String response = ""; // need to declare AND instantiate
         if(number % 3 == 0) {
-            System.out.println("Fizz");
+            response = "Fizz";
         }
         if(number % 5 == 0) {
-            System.out.println("Buzz");
+            response = "Buzz";
         }
-        else if((number % 3 ==0) && (number % 5 == 0)){
-            System.out.println("FizzBuzz");
+        if((number % 3 ==0) && (number % 5 == 0)) {
+            response = "FizzBuzz";
         }
         else{
-            System.out.println(number);
+            // System.out.println(number);
         }
-        return "";
+    return response;
     }
 }
 // 3 Test cases: 
